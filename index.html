@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9d1e8f249f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="://fonts.googleapis.com">
+    <link rel="preconnect" href="://fonts.gstatic.com" crossorigin>
+    <link href="://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Coinbase-Clone</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo"><svg width="110" height="20" viewBox="0 0 359 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M72.3094 17.8676C59.2941 17.8676 49.1245 27.7478 49.1245 40.9744C49.1245 54.2011 59.0371 63.9967 72.3094 63.9967C85.5816 63.9967 95.6666 54.032 95.6666 40.8899C95.6666 27.8323 85.754 17.8676 72.3094 17.8676ZM72.3972 54.4646C64.9854 54.4646 59.5542 48.7082 59.5542 40.9777C59.5542 33.1594 64.8976 27.4063 72.3094 27.4063C79.8089 27.4063 85.2369 33.2472 85.2369 40.9777C85.2369 48.7082 79.8089 54.4646 72.3972 54.4646ZM98.5091 27.9201H104.974V63.1414H115.316V18.7262H98.5091V27.9201ZM23.0971 27.403C28.5283 27.403 32.8374 30.7528 34.4733 35.7351H45.4202C43.4364 25.0842 34.6457 17.8676 23.1849 17.8676C10.1696 17.8676 0 27.7478 0 40.9777C0 54.2076 9.9127 64 23.1849 64C34.3887 64 43.3518 56.7834 45.3356 46.0446H34.4733C32.922 51.027 28.6128 54.4646 23.1817 54.4646C15.6821 54.4646 10.4265 48.7082 10.4265 40.9777C10.4298 33.1594 15.6008 27.403 23.0971 27.403ZM295.013 36.6815L287.429 35.566C283.81 35.0522 281.224 33.8489 281.224 31.013C281.224 27.9201 284.587 26.3753 289.153 26.3753C294.152 26.3753 297.342 28.5218 298.031 32.0439H308.029C306.907 23.1101 300.012 17.8708 289.413 17.8708C278.466 17.8708 271.227 23.4549 271.227 31.3577C271.227 38.9158 275.968 43.2998 285.533 44.6722L293.117 45.7877C296.825 46.3015 298.893 47.765 298.893 50.5131C298.893 54.0353 295.274 55.4955 290.275 55.4955C284.154 55.4955 280.707 53.0043 280.19 49.2253H270.02C270.97 57.9021 277.777 64 290.187 64C301.479 64 308.975 58.8453 308.975 49.996C308.975 42.0932 303.547 37.9694 295.013 36.6815ZM110.145 0.42929C106.353 0.42929 103.508 3.1774 103.508 6.95645C103.508 10.7355 106.35 13.4836 110.145 13.4836C113.937 13.4836 116.783 10.7355 116.783 6.95645C116.783 3.1774 113.937 0.42929 110.145 0.42929ZM261.919 33.9334C261.919 24.3134 256.059 17.8708 243.648 17.8708C231.927 17.8708 225.377 23.7996 224.083 32.9057H234.34C234.857 29.3836 237.615 26.4631 243.476 26.4631C248.735 26.4631 251.32 28.7819 251.32 31.6179C251.32 35.3124 246.578 36.2555 240.718 36.8572C232.789 37.7157 222.964 40.4638 222.964 50.7733C222.964 58.764 228.912 63.9154 238.393 63.9154C245.804 63.9154 250.458 60.8226 252.787 55.9248C253.132 60.3055 256.407 63.1414 260.976 63.1414H267.009V53.9507H261.922V33.9334H261.919ZM251.749 45.1015C251.749 51.0302 246.578 55.4109 240.285 55.4109C236.406 55.4109 233.131 53.7783 233.131 50.344C233.131 45.9633 238.389 44.76 243.216 44.2462C247.87 43.8169 250.455 42.7859 251.749 40.8086V45.1015ZM196.849 17.8676C191.073 17.8676 186.247 20.2742 182.8 24.3102V0H172.458V63.1414H182.627V57.3005C186.074 61.5088 190.989 64 196.849 64C209.259 64 218.655 54.2076 218.655 40.9777C218.655 27.7478 209.087 17.8676 196.849 17.8676ZM195.298 54.4646C187.886 54.4646 182.455 48.7082 182.455 40.9777C182.455 33.2472 187.971 27.4063 195.382 27.4063C202.882 27.4063 208.137 33.1627 208.137 40.9777C208.137 48.7082 202.709 54.4646 195.298 54.4646ZM147.721 17.8676C140.999 17.8676 136.602 20.6157 134.017 24.4825V18.7262H123.759V63.1382H134.101V39.0004C134.101 32.213 138.41 27.403 144.788 27.403C150.736 27.403 154.44 31.6114 154.44 37.7125V63.1414H164.782V36.9417C164.786 25.7704 159.013 17.8676 147.721 17.8676ZM358.275 39.5175C358.275 26.8046 348.967 17.8708 336.469 17.8708C323.197 17.8708 313.457 27.8356 313.457 40.9777C313.457 54.8093 323.886 64 336.642 64C347.416 64 355.862 57.642 358.015 48.6236H347.24C345.689 52.575 341.897 54.8093 336.811 54.8093C330.173 54.8093 325.174 50.6855 324.055 43.4689H358.272V39.5175H358.275ZM324.66 36.0799C326.3 29.8942 330.953 26.8892 336.297 26.8892C342.157 26.8892 346.639 30.2389 347.673 36.0799H324.66Z" fill="#0052FF"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="358.275" height="64" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Individuals</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Company</a></li>
+                </ul>
+            </div>
+            <div class="oneside">
+                <li><a href="#">Sign in</a></li>
+                <button class="nav-btn">Get Started</button>
+            </div>
+        </nav>
+        <!-- <hr> -->
+        <header>
+            <div id="header-left">
+                <div class="header-left-link">
+                    <span class="font-awesome"><i class="fa-brands fa-bitcoin"></i></span><a href="#">Jump start your portfolio</a><i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+                <div class="header-left-h1">Jump start<br>your crypto<br> <span class="portfolio-text">portfolio</span> </div>
+                <div class="header-left-quote"> coinbase is the easiest place to buy and sell <br>cryptocurrency. signup and get started today.<br></div>
+                <input type="text" placeholder="Email address"> 
+                <button class="header-left-btn">Get started</button>
+            </div>
+
+            <div id="header-right">
+                <img src="img/Coinbase-app.png" alt="portfolio" width="450px">
+            </div>
+        </header>
+        <main>
+            <section class="table-pt">
+                <table id="table-pt">
+                    <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Price</th>
+                          <th>Change</th>
+                          <th>Chart</th>
+                          <th>Trade</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td><i class="fa-brands fa-bitcoin" id="table-btc"></i> Bitcoin <span class="x-txt">BTC</span> </td>
+                            <td>NGN 9,828,107.25</td>
+                            <td> <span class="table-percent">-0.47%</span></td>
+                            <td><i class="fa-solid fa-chart-line"></i></td>
+                            <td><button class="table-btn">Buy</button></td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td><img src="icons/eth.png" alt="eth" class="ethereum"> Ethereum <span class="x-txt">ETH</span> </td>
+                            <td>NGN 700,875.48</td>
+                            <td><span class="table-percent">+0.95%</span></td>
+                            <td><i class="fa-solid fa-chart-line"></i></td>
+                            <td><button class="table-btn">Buy</button></td>
+                        </tr>
+                        <tr class="xxx">
+                            <th class="xx">3</th>
+                            <td><img src="icons/cardano.png" alt="ada" class="cardano"> Cardano <span class="x-txt">ADA</span></td>
+                            <td>NGN 212.68</td>
+                            <td><span class="table-percent">-2.12%</span></td>
+                            <td><i class="fa-solid fa-chart-line"></i></td>
+                            <td><button class="table-btn">Buy</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="second-pt">
+                <div class="secondpt-left">
+                    <h1 class="secondpt-left-txt">Earn up to $13 worth of crypto</h1>
+                    <p class="secondpt-left-qt">Discover how specific cryptocurrencies work - and <br>
+                    get a bit of each crypto to try out for yourself.</p>
+                    <button class="secondpt-left-btn">Start Learning</button>
+                </div>
+                <div class="secondpt-ryt">
+                    <button class="secondpt-ryt-btn">  <span class="secondpt-ryt-txt"><img src="icons/62365d11-b992-47f4-beed-588a457f71ed.png" alt="grt" class="grt"> <span class="xxxxx"> The Graph</span> <span class="symbol">GRT</span> </span> <span class="earn4">Earn$4 GRT</span>  </button>
+                    <button class="secondpt-ryt-btn"><span class="secondpt-ryt-txt"><img src="icons/a4226bf8-315a-4802-af43-23766503a97c (1).png" alt="gal" class="gal">  <span class="xxxxx"> Project Galaxy</span> <span class="symbol">GAl</span> </span> <span class="earn4">Earn$4 GAl</span> </button>
+                    <button class="secondpt-ryt-btn"><span class="secondpt-ryt-txt"><img src="icons/9e0cf080-2589-465c-aefc-d6a147b8c9c4.png" alt="alp" class="aleph"> <span class="xxxxx">Aleph.im</span><span class="symbol">ALEPH</span> </span> <span class="earn4">Earn$4 ALEPH</span> </button>
+                    <button class="secondpt-ryt-btn"><span class="secondpt-ryt-txt"> <img src="icons/626691ce-b363-4e21-a0a5-f3e6579a85d3.png" alt="amp" class="amp">  <span class="xxxxx">Amp</span><span class="symbol">AMP</span>   </span>   <span class="earn4">Earn$4 AMP</span> </button>
+                    <a href="#">view more ></a>
+                </div>
+            </section>
+            <br>
+            <div class="xxxx">
+                <h1 class="xxxx-txt">Create your cryptocurrency portfolio today</h1>
+                <p class="xxxx-qt">Coinbase has variety of features which makes it the best place to start trading.</p>
+            </div>
+            <br>
+            <section class="third-pt">
+                <div class="thirdpt-left">
+                    <div class="thirdpt-icon1"><i class="fa-solid fa-chart-column"></i></div>
+                    <div class="thirdpt-icon2"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="thirdpt-icon3"><i class="fa-solid fa-lock"></i></div>  
+                    <div class="thirdpt-icon4"><i class="fa-solid fa-mobile"></i></div>  
+                </div>
+                <div class="thirdpt-middle">
+                    <div class="middle">
+                        <h2 class="thirdpt-title">Manage your portfolio</h2>
+                        <p class="thirdpt-txt">Buy and Sell popular digital currencies, keep track of them in one place.</p>
+                    </div>
+                    <div class="middle">
+                        <h2 class="thirdpt-title">Recurring buy</h2>
+                        <p class="thirdpt-txt">Investing in cryptocurrency slowly over time by scheduling buys daily, weekly, or monthly.</p>
+                    </div>
+                    <div class="middle">
+                        <h2 class="thirdpt-title">Vault protection</h2>
+                        <p  class="thirdpt-txt">For added security, store your funds in a vault with time delayed withdrawals.</p>
+                    </div>
+                    <div class="middle">
+                        <h2 class="thirdpt-title">Mobileapps</h2>
+                        <p class="thirdpt-txt">stay on top of the markets with Coinbase app for <span class="andriod">Andriod</span> or  <span class="ios">iOS</span></p>
+                    </div>
+                </div>
+
+                <div thirdpt-ryt>
+                    <img src="img/coinbase-app-mobile.ce6b3771820067349ca07f6debc35f2d.webp" alt="x">
+                </div>
+            </section> 
+            <hr>
+            <div class="xxxxxx">
+                <h1 class="xxxxxx-txt">The most trusted cryptocurrency platform</h1>
+                <p class="xxxxxx-qt">Here are a few reasons why you should choose Coinbase</p>
+            </div>
+
+            <section class="fourth-pt">
+                <div class="secure">
+                    <span><i class="fa-solid fa-shield"></i></span>
+                    <h2 class="fourth-title">Secure storage</h2>
+                    <p class="fourth-txt">We store the vast majority of the digital <br> assets in secure offline storage.</p>
+                    <a href="#" class="fourth-link" >Learn how Coinbase keeps your funds safe and <br> secure ></a>
+                </div>
+                <div class="protected">
+                    <span><i class="fa-solid fa-hand-holding-hand"></i></span>
+                    <h2 class="fourth-title">Protected by insurance</h2>
+                    <p class="fourth-txt">Coinbase maintains crypto insurance<br> by FDIC insurance, up to a maximum of $250,000.</p>
+                    <a href="#" class="fourth-link">Learn how your is covered by our <br> insurance policy ></a>
+                </div>
+                <div class="best">
+                    <span><i class="fa-solid fa-check-to-slot"></i></span>
+                    <h2 class="fourth-title">industry best pratices</h2>
+                    <p class="fourth-txt">Coinbase supports a variety of the most <br> popular digital currencies.</p>
+                    <a href="#" class="fourth-link">Learn how we implement industry best <br> pratices for account security > </a>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="volume">
+                    <span class="stats-txt">$309B</span>
+                    <p class="stats-qt">Quaterly volume traded</p>
+                </div>
+                <div class="supported">
+                    <span class="stats-txt">100+</span>
+                    <p class="stats-qt">Countries Supported</p>
+                </div>
+                <div class="verified">
+                    <span class="stats-txt">98M+</span>
+                    <p class="stats-qt">Verified users</p>
+                </div>
+            </section>
+
+            <div class="get-started">
+                <h1 class="gst-txt">Get started in a few minutes</h1>
+                <p class="gst-qt">Coinbase supports variety of the most popular digital currencies.</p>
+            </div>
+            <div class="gst-icon">
+                <div class="gsticon-left">
+                    <i class="fa-solid fa-user-plus"></i> 
+                </div>
+                <div class="gsticon-middle">
+                    <i class="fa-solid fa-building-columns"></i> 
+                </div>
+                <div class="gsticon-ryt">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>  
+                </div>
+            </div>
+            <div class="gsticon-txt">
+                <span class="create">Create an account</span>
+                <span class="link">Link your bank account</span>
+                <span class="start">Start buying & selling</span>
+            </div>
+            <section class="banner">
+                <img src="img/banner.webp" alt="banner" class="banner-img">
+                <div class="banner-main">
+                    <h1 class="banner-txt">Earn up to $13 worth of <br> crypto</h1> 
+                    <p class="banner-qt">
+                     Discover how specific cryptocurrencies work and <br>
+                     get a bit of each crypto to try out for yourself.
+                </p>
+                <button class="banner-btn">Start Learning</button>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="copyright">
+                <div class="footer-logo"><svg width="110" height="20" viewBox="0 0 359 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M72.3094 17.8676C59.2941 17.8676 49.1245 27.7478 49.1245 40.9744C49.1245 54.2011 59.0371 63.9967 72.3094 63.9967C85.5816 63.9967 95.6666 54.032 95.6666 40.8899C95.6666 27.8323 85.754 17.8676 72.3094 17.8676ZM72.3972 54.4646C64.9854 54.4646 59.5542 48.7082 59.5542 40.9777C59.5542 33.1594 64.8976 27.4063 72.3094 27.4063C79.8089 27.4063 85.2369 33.2472 85.2369 40.9777C85.2369 48.7082 79.8089 54.4646 72.3972 54.4646ZM98.5091 27.9201H104.974V63.1414H115.316V18.7262H98.5091V27.9201ZM23.0971 27.403C28.5283 27.403 32.8374 30.7528 34.4733 35.7351H45.4202C43.4364 25.0842 34.6457 17.8676 23.1849 17.8676C10.1696 17.8676 0 27.7478 0 40.9777C0 54.2076 9.9127 64 23.1849 64C34.3887 64 43.3518 56.7834 45.3356 46.0446H34.4733C32.922 51.027 28.6128 54.4646 23.1817 54.4646C15.6821 54.4646 10.4265 48.7082 10.4265 40.9777C10.4298 33.1594 15.6008 27.403 23.0971 27.403ZM295.013 36.6815L287.429 35.566C283.81 35.0522 281.224 33.8489 281.224 31.013C281.224 27.9201 284.587 26.3753 289.153 26.3753C294.152 26.3753 297.342 28.5218 298.031 32.0439H308.029C306.907 23.1101 300.012 17.8708 289.413 17.8708C278.466 17.8708 271.227 23.4549 271.227 31.3577C271.227 38.9158 275.968 43.2998 285.533 44.6722L293.117 45.7877C296.825 46.3015 298.893 47.765 298.893 50.5131C298.893 54.0353 295.274 55.4955 290.275 55.4955C284.154 55.4955 280.707 53.0043 280.19 49.2253H270.02C270.97 57.9021 277.777 64 290.187 64C301.479 64 308.975 58.8453 308.975 49.996C308.975 42.0932 303.547 37.9694 295.013 36.6815ZM110.145 0.42929C106.353 0.42929 103.508 3.1774 103.508 6.95645C103.508 10.7355 106.35 13.4836 110.145 13.4836C113.937 13.4836 116.783 10.7355 116.783 6.95645C116.783 3.1774 113.937 0.42929 110.145 0.42929ZM261.919 33.9334C261.919 24.3134 256.059 17.8708 243.648 17.8708C231.927 17.8708 225.377 23.7996 224.083 32.9057H234.34C234.857 29.3836 237.615 26.4631 243.476 26.4631C248.735 26.4631 251.32 28.7819 251.32 31.6179C251.32 35.3124 246.578 36.2555 240.718 36.8572C232.789 37.7157 222.964 40.4638 222.964 50.7733C222.964 58.764 228.912 63.9154 238.393 63.9154C245.804 63.9154 250.458 60.8226 252.787 55.9248C253.132 60.3055 256.407 63.1414 260.976 63.1414H267.009V53.9507H261.922V33.9334H261.919ZM251.749 45.1015C251.749 51.0302 246.578 55.4109 240.285 55.4109C236.406 55.4109 233.131 53.7783 233.131 50.344C233.131 45.9633 238.389 44.76 243.216 44.2462C247.87 43.8169 250.455 42.7859 251.749 40.8086V45.1015ZM196.849 17.8676C191.073 17.8676 186.247 20.2742 182.8 24.3102V0H172.458V63.1414H182.627V57.3005C186.074 61.5088 190.989 64 196.849 64C209.259 64 218.655 54.2076 218.655 40.9777C218.655 27.7478 209.087 17.8676 196.849 17.8676ZM195.298 54.4646C187.886 54.4646 182.455 48.7082 182.455 40.9777C182.455 33.2472 187.971 27.4063 195.382 27.4063C202.882 27.4063 208.137 33.1627 208.137 40.9777C208.137 48.7082 202.709 54.4646 195.298 54.4646ZM147.721 17.8676C140.999 17.8676 136.602 20.6157 134.017 24.4825V18.7262H123.759V63.1382H134.101V39.0004C134.101 32.213 138.41 27.403 144.788 27.403C150.736 27.403 154.44 31.6114 154.44 37.7125V63.1414H164.782V36.9417C164.786 25.7704 159.013 17.8676 147.721 17.8676ZM358.275 39.5175C358.275 26.8046 348.967 17.8708 336.469 17.8708C323.197 17.8708 313.457 27.8356 313.457 40.9777C313.457 54.8093 323.886 64 336.642 64C347.416 64 355.862 57.642 358.015 48.6236H347.24C345.689 52.575 341.897 54.8093 336.811 54.8093C330.173 54.8093 325.174 50.6855 324.055 43.4689H358.272V39.5175H358.275ZM324.66 36.0799C326.3 29.8942 330.953 26.8892 336.297 26.8892C342.157 26.8892 346.639 30.2389 347.673 36.0799H324.66Z" fill="#0052FF"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="358.275" height="64" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </div>
+                <select name="language" class="language">
+                    <option value="Deutsch" class="lang-txt"></option>
+                    <option value="English" class="lang-txt" selected>English</option>
+                    <option value="Espanol" class="lang-txt">Espanol</option>
+                    <option value="Francias" class="lang-txt">Francias</option>
+                    <option value="italiano" class="lang-txt">italiano</option>
+                    <option value="polski" class="lang-txt">polski</option>
+                </select>
+                <p class="cp-txt">&copy; 2022 Coinbase</p>
+                <div class="link-pt">
+                    <span class="cp-link"><a href="#">Blog</a></span> <span class="cp-link"><a href="#">Twitter</a></span> <span class="cp-link"><a href="#">Facebook</a></span> 
+                </div>
+               
+            </div>
+            <div class="col-1">
+                <div class="company">
+                    <span class="bold">Company</span> <br> 
+                    <div class="items">
+                        About <br>
+                       Careers <br>
+                       Affiliates <br>
+                       Blog  <br>
+                       Press <br>
+                       Investors <br>
+                       Legal & privacy <br>
+                       Cookie preferences <br>
+                       Digital Assets Disclosures <br>
+                    </div>
+                </div>
+                <div class="learn">
+                    <span class="bold">Learn</span> <br>
+                    <div class="items">
+                        Browse crypto pratices <br>
+                        Coinbase Bytes newsletter <br>
+                        Crypto basics <br>
+                        Tips & tutorials <br>
+                        Market updates  <br>
+                        What is Bitcoin? <br>
+                        What is a crypto? <br>
+                        What is a blockchain? <br>
+                        How  to set up a crypto wallet <br>
+                        How to send crypto <br>
+                        Taxes <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="individual">
+                    <span class="bold">Individual</span>  <br>
+                    <div class="items">
+                        Buy & Sell <br>
+                        Earn free crypto <br>
+                        Wallet <br>
+                        NFT <br>
+                        Card <br>
+                        Derivatives <br>    
+                    </div>
+                </div>
+                
+                <div class="businesses">
+                    <span class="bold">Businesses</span> <br>
+                    <div class="items">
+                        Institutional <br>
+                        Prime <br>
+                        Asset Hub <br>
+                        Commerce <br>
+                    </div> 
+                </div>
+
+                <div class="developers">
+                    <span class="bold">Developers</span> <br>
+                    <div class="items">
+                        Cloud <br>
+                        Wallet SDK <br>
+                        Coinbase Pay SDK <br>
+                        Query & Transact <br>
+                        Commerce <br>
+                        Exchange <br>
+                        Sign in with Coinbase <br>
+                        Rosetta <br>
+                        Participate <br>
+                        Prime API <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="support">
+                    <span class="bold">Support</span> <br>
+                    <div class="items">
+                        Help center <br>
+                        Contact us <br>
+                        Create account <br>
+                        ID verification <br>
+                        Account information <br>
+                        Payment methods <br>
+                        Account access <br>
+                        Supported crypto <br>
+                        Supported Countries <br>
+                        Status <br>
+                    </div>  
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
